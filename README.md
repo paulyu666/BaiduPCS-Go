@@ -24,6 +24,14 @@
 
 由于是自用，因此并不提供编译完成的版本，但大概您直接`go build`也没有太大问题，配置好一些命令行工具后直接使用build.sh问题应该也不大
 
+需要安装rice并把$GOPATH/bin目录加入到PATH中，请将最后的export命令放入bash等初始化文件中，方法是
+
+```bash
+go get github.com/GeertJohan/go.rice
+go get github.com/GeertJohan/go.rice/rice
+export PATH=$GOPATH/bin:$PATH
+```
+
 ## 参数介绍
 
 从某种程度讲，WEB版并没有删除命令行的功能，因此直接当它是命令行运行也是可行的，这也是为什么`-h`命令中会显示那么多参数命令的原因。
@@ -61,6 +69,8 @@ A: 是`pass`
 ## 贡献者
 
 https://github.com/waylonwang
+
+https://github.com/juebanlin
 
 ## PS
 
