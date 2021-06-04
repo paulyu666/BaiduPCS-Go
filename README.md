@@ -41,7 +41,7 @@ export PATH=$GOPATH/bin:$PATH
 * --aria2, -a                      启用aria2下载，停用自带下载，最好搭配pdurl使用，否则可能出现403等情况，具体原因在下文的原理介绍中有
 *  --aria2url value, --au value     aria2的url (default: "http://localhost:6800/jsonrpc")
 * --aria2secret value, --as value  aria2-RPC的secret，默认为空
-* --aria2pre value, --ap value     aria2-RPC添加下载链接时附加在前面的前缀，用于部分解决下载时的403问题和部分拉黑后无法下载问题，默认为空，注意，前缀是以Aria2服务器为起始点的!例子: http://localhost:5299/bd/，不保证能用
+* --aria2pre value, --ap value     已废弃，不可用，也无需再用
 * --pdurl value, --pd value        使用 https://github.com/TkzcM/baiduwp 搭建的Pandownload搭建网站加速下载的网址，如 https://pandl.live/ ，注意需要输入开头的https或http和末尾的/，默认不使用，pandl.live已经不能使用了，建议几个朋友合起来整一个号搭建一个用，后期可能还会添加其他一些其他类似项目的支持(咕咕咕)
 
 ## 原理介绍

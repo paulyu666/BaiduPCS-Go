@@ -3,10 +3,11 @@ package netdisksign
 import (
 	"crypto/sha1"
 	"encoding/hex"
-	"github.com/Erope/BaiduPCS-Go/pcsutil/cachepool"
-	"github.com/Erope/BaiduPCS-Go/pcsutil/converter"
 	"strconv"
 	"time"
+
+	"github.com/Erope/BaiduPCS-Go/pcsutil/cachepool"
+	"github.com/Erope/BaiduPCS-Go/pcsutil/converter"
 )
 
 type (
@@ -48,5 +49,5 @@ func (s *LocateDownloadSign) Sign(uid uint64, bduss string) {
 }
 
 func (s *LocateDownloadSign) URLParam() string {
-	return "time=" + strconv.FormatInt(s.Time, 10) + "&rand=" + s.Rand + "&devuid=" + s.DevUID
+	return "time=" + strconv.FormatInt(s.Time, 10) + "&rand=" + s.Rand + "&devuid=" + s.DevUID + "&origin=dlna"
 }
