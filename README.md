@@ -38,7 +38,7 @@ export PATH=$GOPATH/bin:$PATH
 
 下面介绍WEB版本身的参数:
 
-* --aria2, -a                      启用aria2下载，停用自带下载，最好搭配pdurl使用，否则可能出现403等情况，具体原因在下文的原理介绍中有
+* --aria2, -a                      启用aria2下载，停用自带下载，目前首选Aria2进行下载，可选用Motrix等(注意Motrix的端口是16800而非6800)
 *  --aria2url value, --au value     aria2的url (default: "http://localhost:6800/jsonrpc")
 * --aria2secret value, --as value  aria2-RPC的secret，默认为空
 * --aria2pre value, --ap value     已废弃，不可用，也无需再用
@@ -71,6 +71,8 @@ A: 是`pass`
 https://github.com/waylonwang
 
 https://github.com/juebanlin
+
+https://pandownload.net/
 
 ## PS
 
