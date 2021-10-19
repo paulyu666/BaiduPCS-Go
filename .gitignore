@@ -20,7 +20,7 @@ out/
 # Others
 .DS_Store
 *.proc
-*.txt
+# *.txt
 *.log
 captcha.png
 pcs_config.json
