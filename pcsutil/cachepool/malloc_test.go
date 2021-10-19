@@ -2,11 +2,12 @@ package cachepool_test
 
 import (
 	"fmt"
-	"github.com/Erope/BaiduPCS-Go/requester/downloader/cachepool"
 	"reflect"
 	"runtime"
 	"testing"
 	"unsafe"
+
+	"github.com/Erope/BaiduPCS-Go/pcsutil/cachepool"
 )
 
 func TestMalloc(t *testing.T) {

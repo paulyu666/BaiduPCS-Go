@@ -2,11 +2,12 @@ package downloader
 
 import (
 	"fmt"
-	"github.com/Erope/BaiduPCS-Go/pcsverbose"
-	"github.com/Erope/BaiduPCS-Go/requester"
 	"os"
 	"testing"
 	"time"
+
+	"github.com/Erope/BaiduPCS-Go/pcsverbose"
+	"github.com/Erope/BaiduPCS-Go/requester"
 )
 
 var (
@@ -41,7 +42,7 @@ func TestDownloadTIM(t *testing.T) {
 	go func() {
 		for {
 			if d.monitor != nil {
-				fmt.Println(d.monitor.ShowWorkers())
+				//fmt.Println(d.monitor.ShowWorkers())
 			}
 			time.Sleep(1e9)
 		}
