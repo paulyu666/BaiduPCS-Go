@@ -4,12 +4,21 @@ package randominfo
 import (
 	"crypto/md5"
 	cryptorand "crypto/rand"
+	"crypto/sha1"
+	"encoding/base64"
 	"encoding/binary"
 	"encoding/hex"
 	"strconv"
 	"strings"
 	"time"
 )
+
+// RandomSha1Base64String 随机sha1字符串, base64编码
+func RandomSha1Base64String() string {
+	m := sha1.New()
+	m.Write(RamdomBytes(4))
+	return base64.StdEncoding.EncodeToString(m.Sum(nil))
+}
 
 // RandomNumber 返回[min, max]随机数字
 func RandomNumber(min, max uint64) (v uint64) {

@@ -3,7 +3,7 @@
 github.com/Erope/Baidu-Login
 github.com/Erope/Baidu-Login/bdcrypto
 github.com/Erope/Baidu-Login/bdcrypto/ecb
-# github.com/Erope/baidu-tools v0.0.0-20200918062113-82e4bcc32797
+# github.com/Erope/baidu-tools v0.0.0-20220113133652-ff5012ce8706
 ## explicit
 github.com/Erope/baidu-tools
 github.com/Erope/baidu-tools/randominfo

@@ -1,13 +1,11 @@
 package tiebautil
 
 import (
-	"bytes"
 	"crypto/md5"
 	"encoding/hex"
 	"sort"
 	"strconv"
 	"strings"
-	"unsafe"
 
 	"github.com/Erope/baidu-tools/randominfo"
 )
@@ -57,7 +55,7 @@ func TiebaClientSignature(post map[string]string) {
 // TiebaClientRawQuerySignature 给 rawQuery 进行贴吧客户端签名, 返回值为签名后的 rawQuery
 func TiebaClientRawQuerySignature(rawQuery string) (signedRawQuery string) {
 	m := md5.New()
-	m.Write(bytes.Replace(*(*[]byte)(unsafe.Pointer(&rawQuery)), []byte("&"), nil, -1))
+	m.Write([]byte(strings.ReplaceAll(rawQuery, "&", "")))
 	m.Write([]byte("tiebaclient!!!"))
 
 	signedRawQuery = rawQuery + "&sign=" + strings.ToUpper(hex.EncodeToString(m.Sum(nil)))

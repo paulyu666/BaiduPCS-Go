@@ -6,7 +6,7 @@ require (
 	github.com/Erope/Baidu-Login v1.2.3
 	github.com/Erope/baidu-tools v0.0.0-20220113133652-ff5012ce8706
 	github.com/GeertJohan/go.rice v1.0.2
-	github.com/astaxie/beego v1.12.2 // indirect
+	github.com/astaxie/beego v1.12.3 // indirect
 	github.com/bitly/go-simplejson v0.5.0
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/fatih/color v1.13.0
@@ -25,7 +25,6 @@ require (
 )
 
 require (
-	github.com/astaxie/beego v1.12.3 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/bmizerany/assert v0.0.0-20160611221934-b7ed37b82869 // indirect
 	github.com/cespare/xxhash/v2 v2.1.1 // indirect
