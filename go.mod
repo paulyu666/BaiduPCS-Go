@@ -4,8 +4,9 @@ go 1.17
 
 require (
 	github.com/Erope/Baidu-Login v1.2.3
-	github.com/Erope/baidu-tools v0.0.0-20200918062113-82e4bcc32797
+	github.com/Erope/baidu-tools v0.0.0-20220113133652-ff5012ce8706
 	github.com/GeertJohan/go.rice v1.0.2
+	github.com/astaxie/beego v1.12.2 // indirect
 	github.com/bitly/go-simplejson v0.5.0
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/fatih/color v1.13.0
