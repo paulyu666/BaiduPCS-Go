@@ -2,9 +2,9 @@ name: BaiduPCs-web
 
 on:
   push:
-    branches: [ master ]
+    branches: [ v3.7.5 ]
   pull_request:
-    branches: [ master ]
+    branches: [ v3.7.5 ]
 
 jobs:
 
